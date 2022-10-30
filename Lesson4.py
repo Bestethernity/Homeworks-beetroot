@@ -15,21 +15,13 @@
 # The program should check that the string contains only numerical characters and is only 10 characters long.
 # Print a suitable message depending on the outcome of the string evaluation.
 
-phone_1 = input('Please enter your number: ')
-print("Your telephone number is : ", phone_1)
-count = 0
-while count < len(phone_1):
-    count += 1
-print('Number lenth: ', count)
-while phone_1.isalpha():
-    print('Your phone should be 10 characters long and contain only numbers.')
-    phone_1 = input('Please enter your number: ')
-if count >= 11 or count <= 9 :
-    print('Try again')
-
-
-print('Thank you!')
-
+while True:
+    n  = input('enter number: ')
+    if len(n) != 10 or not n.isdigit():
+        print("wrong number")
+    else:
+        print('ok')
+        break
 
 # Task 3
 # Write a program that asks the answer for a mathematical expression,
