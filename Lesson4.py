@@ -15,13 +15,13 @@
 # The program should check that the string contains only numerical characters and is only 10 characters long.
 # Print a suitable message depending on the outcome of the string evaluation.
 
-while True:
-    n  = input('enter number: ')
-    if len(n) != 10 or not n.isdigit():
-        print("wrong number")
-    else:
-        print('ok')
-        break
+# while True:
+#     n  = input('enter number: ')
+#     if len(n) != 10 or not n.isdigit():
+#         print("wrong number")
+#     else:
+#         print('ok')
+#         break
 
 # Task 3
 # Write a program that asks the answer for a mathematical expression,
@@ -41,10 +41,9 @@ while True:
 # name has another case, e.g., if your input is “Anton” and the stored name is “anton”,
 # it should return True.
 
-# my_name = "svitlana"
-# my_name_input = input("Your name: ")
-# my_name_input = my_name_input.lower()
-# if my_name == my_name_input:
-#     print('True')
-# else:
-#     print('Try again!')
+my_name = "svitlana"
+my_name_input = input("Your name: ")
+if my_name == my_name_input.lower():
+    print('True')
+else:
+    print('Try again!')
