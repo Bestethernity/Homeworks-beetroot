@@ -50,14 +50,14 @@
 # Також в один рядок або як вдасться створити зворотний словник {“Monday”: 1,
 
 # list_2 = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-# my_dict = dict()
-# value = 0
-# for a in list_2:
-#     my_dict[a] = value + 1
-#     value += 1
+# # my_dict = dict()
+# # value = 0
+# # for a in list_2:
+# #     my_dict[a] = value + 1
+# #     value += 1
+# # print(my_dict)
+# my_dict = {list_2[i]: i+1 for i in range(7)}
 # print(my_dict)
-
-# reverse_dict = dict()   # I couldn't find the solution for the list as a list of values
-# reverse_dict = {key: value for value in list_2 for key in range(1,8)}
+# reverse_dict = {i+1: list_2[i] for i in range(7)}
 # print(reverse_dict)
 
