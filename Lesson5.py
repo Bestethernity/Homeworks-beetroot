@@ -21,11 +21,7 @@
 # print("Hello {0}, on your next birthday you’ll be {1} years" .format(name,age))
 
 # Task 3
-# import random
-# words_to_randomize = input("Write your word: ")
-# print ( ''.join(random.choice(words_to_randomize) for i in range(len(words_to_randomize))))
-# import random
-# words_to_randomize = input("Write your word: ")
-# new_word = ''
-# for i in range(len(words_to_randomize)):
-#     print(new_word.join(random.choice(words_to_randomize)))
+import random
+words_to_randomize = input("Write your word: ")
+print(5*[''.join(random.choice(words_to_randomize) for i in range(len(words_to_randomize)))])
+

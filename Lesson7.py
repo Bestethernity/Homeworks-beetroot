@@ -5,12 +5,14 @@
 # phrase_1 = phrase.split()
 # my_dict = dict()
 # print(phrase_1)
-# letter_counts = []
+# word_count = 0
 # for word in phrase_1:
-#     word.split()
-#     letter_counts = len(word)
-#     my_dict[word] = letter_counts
+#     if word in my_dict:
+#         my_dict[word]+= 1
+#     else:
+#         my_dict[word] = 1
 # print(my_dict)
+
 
 # Task 2
 # Compute the total price of the stock where the total price is the
@@ -27,7 +29,7 @@
 #     "orange": 1.5,
 #     "pear": 3
 # }
-# "banana": 24, "apple": 2, "orange":48, "pear": 45
+# # "banana": 24, "apple": 0, "orange":48, "pear": 45
 # total_price = dict()
 # new_value = 0
 # for key, value in stock.items():
@@ -36,13 +38,18 @@
 #             new_value = value * value_1
 #             total_price[key] = new_value
 # print(total_price)
+# whole_price = 0
+# for item in total_price:
+#      whole_price += new_value
+# print('Whole price: ', whole_price) -  I don't know how to fix this, it counts somehow 180 in total
 
 # Task 3
 # Use a list comprehension to make a list containing
 # tuples (i, j) where `i` goes from 1 to 10 and `j` is corresponding to `i` squared.
 
-# list_1 = [(a,b) for a in range(1,11) for b in range(1,11)]
+# list_1 = [(i,i**2) for i in range(1,11)]
 # print(list_1)
+
 
 # Task 4
 # Створити лист із днями тижня.
@@ -60,4 +67,5 @@
 # print(my_dict)
 # reverse_dict = {i+1: list_2[i] for i in range(7)}
 # print(reverse_dict)
+
 
